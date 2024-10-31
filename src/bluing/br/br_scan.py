@@ -125,7 +125,7 @@ class BrScanner(BlueScanner):
 
         print(blue('Extended LMP features'))
         # Get Max_Page_Number
-        read_remote_ext_features_complete = hci.read_remote_extended_features(conn_complete.conn_handle, 0x00)
+        read_remote_ext_features_complete = hci.read_remote_extended_features(conn_complete.conn_handle, 0x01)
         if read_remote_ext_features_complete.status != ControllerErrorCodes.SUCCESS:
             logger.error("Failed to read remote extented features\n"
                          "    read remote extented features complete status: 0x{:02x} - {}".format(

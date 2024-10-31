@@ -10,6 +10,7 @@
 /assets/private/
 /backup/
 /dist/
+build/
 /doc/private/
 /plugins/
 /res/private/
